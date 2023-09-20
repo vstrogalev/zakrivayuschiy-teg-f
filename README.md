@@ -9,3 +9,6 @@ HTML, CSS, JavaScript
 
 #Link to github repo
 https://github.com/vstrogalev/zakrivayuschiy-teg-f
+
+#Link to github pages
+https://vstrogalev.github.io/zakrivayuschiy-teg-f/
