@@ -4,3 +4,77 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --card-text-fw: 400;
+    --card-title-fw: 700;
+    --color-bg: #FFFFFF;
+    --color-accent: #000000;
+    --color-stroke: #FFFFFF;
+    --color-btn-text: #FFFFFF;
+    --color-heart-contour: #000000;
+    --gradient: repeating-linear-gradient(to right,#d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a 100%)
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-text-fw: 465;
+    --card-title-fw: 785;
+    --color-bg: #000000;
+    --color-accent: #00CC14;
+    --color-stroke: #00CC14;
+    --color-btn-text: #00CC14;
+    --color-heart-contour: #00CC14;
+    --gradient: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom,#007f0c 0 2px, #004306 2px 4px)
+  }
+
+}
+
+:root.theme-light {
+  --card-text-fw: 400;
+  --card-title-fw: 700;
+  --color-bg: #FFFFFF;
+  --color-accent: #000000;
+  --color-stroke: #FFFFFF;
+  --color-btn-text: #FFFFFF;
+  --color-heart-contour: #000000;
+  --gradient: repeating-linear-gradient(to right,#d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a 100%)
+}
+
+:root.theme-dark {
+  --card-text-fw: 465;
+  --card-title-fw: 785;
+  --color-bg: #000000;
+  --color-accent: #00CC14;
+  --color-stroke: #00CC14;
+  --color-btn-text: #00CC14;
+  --color-heart-contour: #00CC14;
+  --gradient: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom,#007f0c 0 2px, #004306 2px 4px)
+
+}
+
+:root.theme-dark .image-filter-0 {
+  filter: invert(0.8) sepia(50%);
+}
+
+:root.theme-dark .image-filter-1 {
+  filter: brightness(0.5) opacity(0.8) invert(0.8);
+}
+
+:root.theme-dark .image-filter-3 {
+  filter: brightness(0.9);
+}
+
+:root.theme-dark .image-filter-4 {
+  filter: hue-rotate(-330deg) invert(0.8);
+}
+
+:root.theme-dark .image-filter-5 {
+  filter: brightness(50%) invert(0.8);
+}
+
+:root.theme-dark .image-filter-7 {
+  filter: hue-rotate(40deg) brightness(1.5) contrast(0.6);
+}
