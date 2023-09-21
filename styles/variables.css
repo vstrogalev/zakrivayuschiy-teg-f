@@ -11,5 +11,8 @@
   --color-btn-text: #FFFFFF;
   --color-heart-contour: #000000;
   --color-heart-fill: #FF0000;
-  --gradient: repeating-linear-gradient(to right,#d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom,#e7e7e7 0.01%, #1a1a1a 100%)
+  --gradient:
+    repeating-linear-gradient(transparent, transparent, #d3d3d3 2px, #d3d3d3 4px),
+    repeating-linear-gradient(to right, transparent, transparent, #d3d3d3 2px, #d3d3d3 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
