@@ -20,11 +20,11 @@
   padding-block-end: 102px;
   color: var(--color-accent);
   font-family: var(--font-main), Arial, Helvetica, sans-serif;
-
   background: var(--gradient);
   background-color: var(--color-bg);
   background-repeat: no-repeat;
   background-size: 100% 960px;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--card-text-fw, 400);
@@ -35,9 +35,9 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  margin: 0 auto 95px;
+  margin: 0 auto 100px;
   border: 2px solid var(--color-accent, #000);
-  padding: 136px 0 25px;
+  padding: 134px 0 25px;
   font-family: var(--font-accent), monospace;
   font-weight: var(--card-text-fw, 400);
   background: var(--color-bg, #fff);
@@ -46,13 +46,14 @@
 
 .content-width {
   inline-size: clamp(371px, 48.33%, 48.33%);
+  max-inline-size: 1440px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 14px;
+  gap: 12px;
   padding-inline-start: 18px;
 }
 
@@ -160,6 +161,7 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
+  block-size: 696px;
   aspect-ratio: 1 / 1;
 }
 
@@ -211,6 +213,7 @@
   0 1px var(--color-stroke, #000),
   1px 0 var(--color-stroke, #000),
   0 -1px var(--color-stroke, #000);
+  z-index: 1;
 }
 
 @supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
@@ -223,7 +226,7 @@
 
 .card__footer {
   border: 2px solid var(--color-accent, #000);
-  padding: 25px;
+  padding: 23px;
 }
 
 .card__content {
@@ -308,6 +311,7 @@
   padding: 15px 18px;
   inline-size: min(48.33%, 335px);
   block-size: 51px;
+  background-color: var(--color-bg);
 }
 
 .floppy {
@@ -375,7 +379,7 @@
   }
 
   .header {
-    padding: 120px 0 25px;
+    padding: 120px 0 20px;
     min-block-size: 323px;
   }
 
@@ -395,5 +399,10 @@
     gap: 8px;
     inline-size: 83%;
     block-size: 80px;
+  }
+
+  .floppy {
+    inline-size: 28px;
+    block-size: 28px;
   }
 }
