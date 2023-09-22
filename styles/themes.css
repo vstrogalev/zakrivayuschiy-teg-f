@@ -15,9 +15,9 @@
     --color-btn-text: #FFFFFF;
     --color-heart-contour: #000000;
     --gradient:
-    repeating-linear-gradient(transparent, transparent, #d3d3d3 2px, #d3d3d3 4px),
-    repeating-linear-gradient(to right, transparent, transparent, #d3d3d3 2px, #d3d3d3 4px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+      repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   }
 }
 
@@ -27,12 +27,12 @@
     --card-title-fw: 785;
     --color-bg: #000000;
     --color-accent: #00CC14;
-    --color-stroke: #00CC14;
+    --color-stroke: #000000;
     --color-btn-text: #00CC14;
     --color-heart-contour: #00CC14;
     --gradient:
-    repeating-linear-gradient(transparent, transparent, #000 2px, #000 4px),
-    repeating-linear-gradient(to right, transparent, transparent, #007f0c 2px, #004306 4px);
+      repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #007f0c 0 2px, #004306 2px 4px);
   }
 }
 
@@ -45,9 +45,9 @@
   --color-btn-text: #FFFFFF;
   --color-heart-contour: #000000;
   --gradient:
-    repeating-linear-gradient(transparent, transparent, #d3d3d3 2px, #d3d3d3 4px),
-    repeating-linear-gradient(to right, transparent, transparent, #d3d3d3 2px, #d3d3d3 4px),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 }
 
 :root.theme-dark {
@@ -55,12 +55,12 @@
   --card-title-fw: 785;
   --color-bg: #000000;
   --color-accent: #00CC14;
-  --color-stroke: #00CC14;
+  --color-stroke: #000000;
   --color-btn-text: #00CC14;
   --color-heart-contour: #00CC14;
   --gradient:
-    repeating-linear-gradient(transparent, transparent, #000 2px, #000 4px),
-    repeating-linear-gradient(to right, transparent, transparent, #007f0c 2px, #004306 4px);
+    repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #007f0c 0 2px, #004306 2px 4px);
 }
 
 :root.theme-dark .image-filter-0 {

@@ -46,7 +46,7 @@
 
 .content-width {
   inline-size: clamp(371px, 48.33%, 48.33%);
-  max-inline-size: 1440px;
+  max-inline-size: 696px;
 }
 
 .theme-menu__list {
@@ -151,7 +151,6 @@
 .card__image-wrapper {
   position: relative;
   border: 2px solid var(--color-accent, #000);
-  mix-blend-mode: hard-light;
 }
 
 .card__image {
@@ -199,7 +198,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  color: transparent;
+  color: var(--color-accent, #000);
   font-family: var(--font-accent), monospace;
   font-weight: 400;
   font-size: 14px;
@@ -211,6 +210,8 @@
   1px 0 var(--color-stroke, #000),
   0 -1px var(--color-stroke, #000);
   z-index: 1;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
 }
 
 @supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
@@ -373,12 +374,16 @@
 }
 
 @media (width <= 375px) {
+  .page {
+    padding-block-start: 100px;
+  }
+
   .content-width {
     inline-size: 100%;
   }
 
   .header {
-    padding: 120px 0 20px;
+    padding: 120px 0 25px;
     min-block-size: 323px;
   }
 
@@ -390,8 +395,12 @@
     padding: 0;
   }
 
+  .card__label {
+    right: 11px;
+  }
+
   .card__content {
-    margin-block-end: 25px;
+    margin-block-end: 24px;
   }
 
   .footer {
@@ -401,11 +410,11 @@
   .footer__button {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 0px;
     inline-size: 83%;
-    block-size: 80px;
+    block-size: 87px;
   }
 
   .floppy {
